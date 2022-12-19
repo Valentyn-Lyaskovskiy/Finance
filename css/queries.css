@@ -1,0 +1,43 @@
+/*                         1300px          */
+
+@media (max-width: 81.25em) {
+  .smfb-img img {
+    object-position: right;
+  }
+}
+
+/*                         992px          */
+
+@media (max-width: 62em) {
+  .header-nav {
+    margin-left: 8rem;
+  }
+
+  .smfb-img {
+    opacity: 0.5;
+  }
+}
+
+/*                         767px          */
+
+@media (max-width: 47.9375em) {
+  .header-nav {
+    margin-left: 4rem;
+  }
+}
+
+/*                         479px          */
+
+@media (max-width: 29.9375em) {
+  .hlin-link {
+    font-size: 1.8rem;
+  }
+
+  .header-nav {
+    margin-left: 2rem;
+  }
+
+  .header-container {
+    min-height: 7rem;
+  }
+}
