@@ -6,6 +6,34 @@
   }
 }
 
+/*                         1020px          */
+
+@media (max-width: 63.75em) {
+  .achievements-bottom-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .abb-item {
+    width: 25%;
+    padding: 2rem 3rem;
+  }
+
+  .abb-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service {
+    width: 50%;
+  }
+}
+
 /*                         992px          */
 
 @media (max-width: 62em) {
@@ -16,6 +44,15 @@
   .smfb-img {
     opacity: 0.5;
   }
+
+  .achievements-bottom-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .abb-item {
+    width: 50%;
+  }
 }
 
 /*                         767px          */
@@ -23,6 +60,10 @@
 @media (max-width: 47.9375em) {
   .header-nav {
     margin-left: 4rem;
+  }
+
+  .service {
+    width: 60%;
   }
 }
 
@@ -39,5 +80,26 @@
 
   .header-container {
     min-height: 7rem;
+  }
+
+  .smfb-h1 {
+    font-size: 4.2rem;
+  }
+
+  .smfb-buttons {
+    flex-wrap: wrap;
+    margin-top: 3.5rem;
+  }
+
+  .smfb-text {
+    width: 100%;
+  }
+
+  .abb-item {
+    padding: 2rem 2rem;
+  }
+
+  .service {
+    width: 100%;
   }
 }
