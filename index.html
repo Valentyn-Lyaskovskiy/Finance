@@ -16,78 +16,81 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="header-container">
-          <a href="" class="header-logo">Relvise</a>
-          <nav class="header-nav">
-            <ul class="header-list-nav">
-              <li class="header-list-item-nav">
-                <a href="" class="hlin-link">Home</a>
+        <div class="header__container container">
+          <a href="" class="header__logo">Relvise</a>
+          <nav class="header__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="menu__link">Home</a>
               </li>
-              <li class="header-list-item-nav">
-                <a href="" class="hlin-link">Product</a>
+              <li class="menu__item">
+                <a href="" class="menu__link">Product</a>
               </li>
-              <li class="header-list-item-nav">
-                <a href="" class="hlin-link">Pricing</a>
+              <li class="menu__item">
+                <a href="" class="menu__link">Pricing</a>
               </li>
-              <li class="header-list-item-nav">
-                <a href="" class="hlin-link">Contact</a>
+              <li class="menu__item">
+                <a href="" class="menu__link">Contact</a>
               </li>
             </ul>
           </nav>
         </div>
       </header>
+
       <main class="page">
-        <section class="section-main-first-block">
-          <div class="smfb-block">
-            <div class="smfb-container">
-              <div class="smfb-body">
-                <h1 class="smfb-h1">Finance and Consultancy Solution</h1>
-                <p class="smfb-text">
+        <section class="page__main-block main-block">
+            <div class="main-block__container container">
+              <div class="main-block__body">
+                <h1 class="main-block__title">Finance and Consultancy Solution</h1>
+                <p class="main-block__text">
                   We know how large objects will act, but things on a small
                   scale.
                 </p>
-                <div class="smfb-buttons">
-                  <a class="smfb-button-first orange-btn" href=""
-                    >Get Quote Now</a
-                  >
-                  <a class="smfb-button-second" href="">Learn More</a>
+                <div class="main-block__buttons">
+                  <a class="main-block__button main-block__button_orange" href="">Get Quote Now</a>
+                  <a class="main-block__button main-block__button_border" href="">Learn More</a>
                 </div>
               </div>
             </div>
-            <div class="smfb-img ibg">
-              <img src="img/background.jpg" alt="Background photo" />
+            <div class="main-block__img _ibg">
+              <img src="img/background.jpg" alt="Background photo of employees" />
             </div>
-          </div>
         </section>
 
-        <section class="section-services">
-          <div class="services-container">
-            <div class="services-wrapper">
-              <div class="service">
-                <div class="service-icon">
-                  <img src="img/services-01.svg" alt="icon" />
-                </div>
-                <div class="service-title">Environmental Consulting</div>
-                <div class="service-text">
-                  We focus on ergonomics and meeting you where you work.
-                </div>
-              </div>
-              <div class="service">
-                <div class="service-icon">
-                  <img src="img/services-02.svg" alt="icon" />
-                </div>
-                <div class="service-title">Finance and consultancy</div>
-                <div class="service-text">
-                  Just type what's on your mind and we'll get you there.
+        <section class="page__section-services services">
+          <div class="services__container container">
+            <div class="services__wrapper">
+              <div class="services__column">
+                <div class="services__item">
+                  <div class="services__icon">
+                    <img src="img/services-01.svg" alt="Environmental Consulting" />
+                  </div>
+                <h3 class="services__title">Environmental Consulting</h3>
+                  <p class="services__text">
+                  We focus on ergonomics & meeting you where you work.
+                  </p>
                 </div>
               </div>
-              <div class="service green-background">
-                <div class="service-icon">
-                  <img src="img/services-03.svg" alt="icon" />
+              <div class="services__column">
+                <div class="services__item">
+                  <div class="services__icon">
+                    <img src="img/services-02.svg" alt="Finance and consultancy" />
+                  </div>
+                <h3 class="services__title">Finance and Consultancy</h3>
+                  <p class="services__text">
+                  Just type what's on your mind & we'll get you there.
+                  </p>
                 </div>
-                <div class="service-title">Financial Services Consulting</div>
-                <div class="service-text green-background">
-                  the quick fox jumps over the lazy dog
+              </div>
+              <div class="services__column services__column_green">
+                <div class="services__item">
+                  <div class="services__icon">
+                    <img src="img/services-03.svg" alt="Financial Services Consulting" />
+                  </div>
+                <h3 class="services__title">Financial Services Consulting</h3>
+                  <p class="services__text">
+                  The quick brown fox jumps over the lazy dog.
+                  </p>
                 </div>
               </div>
             </div>

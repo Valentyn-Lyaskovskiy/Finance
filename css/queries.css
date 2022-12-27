@@ -1,14 +1,16 @@
-/*                         1300px          */
+/*                        1440px          */
 
-@media (max-width: 81.25em) {
-  .smfb-img img {
+@media (max-width: 90em) {
+
+  .main-block__img img {
     object-position: right;
   }
 }
 
-/*                         1020px          */
+/*                        1020px          */
 
 @media (max-width: 63.75em) {
+
   .achievements-bottom-box {
     flex-wrap: wrap;
     justify-content: center;
@@ -37,12 +39,37 @@
 /*                         992px          */
 
 @media (max-width: 62em) {
-  .header-nav {
-    margin-left: 8rem;
+
+  .header__menu {
+    margin: 0 0 0 10rem;
   }
 
-  .smfb-img {
+  .menu__link {
+  font-size: 2rem;
+  }
+
+  .main-block__title {
+  font-size: 4.67rem;
+  }
+
+  .main-block__img {
     opacity: 0.5;
+  }
+
+  .main-block__body {
+    padding: 14rem 0 19.1rem 0;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .services__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .services__column{
+    flex: 1 0 50%;
   }
 
   .achievements-bottom-box {
@@ -58,9 +85,6 @@
 /*                         767px          */
 
 @media (max-width: 47.9375em) {
-  .header-nav {
-    margin-left: 4rem;
-  }
 
   .service {
     width: 60%;
@@ -70,25 +94,48 @@
 /*                         479px          */
 
 @media (max-width: 29.9375em) {
-  .hlin-link {
-    font-size: 1.8rem;
+
+  .header__menu {
+  margin: 0 0 0 5rem;
   }
 
-  .header-nav {
-    margin-left: 2rem;
-  }
-
-  .header-container {
+  .header__container {
     min-height: 7rem;
   }
 
-  .smfb-h1 {
-    font-size: 4.2rem;
+  .header__logo{
+    padding: 2rem;
+    align-self: flex-start;
   }
 
-  .smfb-buttons {
-    flex-wrap: wrap;
-    margin-top: 3.5rem;
+ html {
+    font-size: 50%;
+  }
+
+    .main-block__title {
+    margin: 4rem 0 0 0  ;
+  }
+
+  .main-block__text{
+    margin-top: -7rem;
+    color: #191919
+  }
+
+.main-block__body > *:not(:last-child) {
+    padding-bottom: 4rem;
+  }
+
+   .menu__link {
+  font-size: 2.25rem;
+  color: #323131;
+  }
+
+  .main-block__button {
+    width: 100%;
+  }
+
+  .main-block__buttonі {
+    margin-top: 4rem;
   }
 
   .smfb-text {

@@ -52,10 +52,10 @@ h6 {
 }
 
 .wrapper {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 [class*="container"] {
@@ -77,11 +77,11 @@ li {
   flex: 1 1 auto;
 }
 
-.ibg {
+._ibg {
   position: relative;
 }
 
-.ibg img {
+._ibg img {
   position: absolute;
   top: 0;
   left: 0;
@@ -97,36 +97,37 @@ li {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 11;
+  z-index: 9;
 }
 
-.header-container {
+.header__container {
   display: flex;
   min-height: 10.4rem;
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   font-size: 2.4rem;
   font-weight: 700;
   color: inherit;
 }
 
-.header-nav {
-  margin-left: 13.3rem;
-  padding: 0.5rem 0;
+.header__menu {
+  margin: 0 0 0 13.3rem;
+  padding: 1rem 0;
 }
 
-.header-list-nav {
+.menu__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.header-list-item-nav:not(:last-child) {
-  margin-right: 2.1rem;
+.menu__item:not(:last-child){
+  margin: 0 2.1rem 0 0;
 }
 
-.hlin-link {
+.menu__link {
+  font-size: 1.4rem;
   color: #737373;
   font-weight: 600;
   line-height: 171%;
@@ -134,41 +135,67 @@ li {
 
 /************               Page     ***************/
 
-.smfb-block {
+.main-block {
   position: relative;
 }
 
-.smfb-body {
+.main-block__body {
   position: relative;
-  padding: 18.4rem 0;
+  padding: 18.4rem 0 19.1rem 0;
   z-index: 2;
-  max-width: 50.9rem;
+  max-width: 45rem;
 }
 
-.smfb-body > *:not(:last-child) {
+.main-block__body > *:not(:last-child) {
   margin-bottom: 3.5rem;
 }
 
-.smfb-h1 {
+.main-block__title {
   font-weight: 800;
   font-size: 5.8rem;
-  line-height: 8rem;
-  /* or 138% */
-  letter-spacing: 0.2px;
+  line-height: 138%;
+  letter-spacing: 0.2rem;
 }
 
-.smfb-text {
+.main-block__text {
   color: #737373;
   font-size: 2rem;
-  width: 37.6rem;
   height: 6rem;
   font-style: normal;
-  line-height: 3rem;
-  /* or 150% */
-  letter-spacing: 0.2px;
+  line-height: 150%;
+  letter-spacing: 0.2rem;
 }
 
-.smfb-img {
+.main-block__buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-block__button {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  border-radius: 3.7rem;
+  min-height: 4.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 250%;
+  padding: 1rem 3.6rem;
+}
+
+.main-block__button_orange {
+  background: #ff7b47;
+  color: #ffffff;
+}
+
+.main-block__button_border {
+  color: #0d5c63;
+  border: 0.1rem solid #0d5c63;
+}
+
+.main-block__img {
   position: absolute;
   top: 0;
   left: 0;
@@ -176,85 +203,59 @@ li {
   height: 100%;
 }
 
-.smfb-buttons {
-  display: inline-flex;
-  gap: 1rem;
-  /* width: 35.4rem; */
-}
-
-.smfb-button-first,
-.smfb-button-second {
-  font-weight: 700;
-  font-size: 1.4rem;
-  line-height: 2.8rem;
-  /* identical to box height, or 200% */
-  text-align: center;
-  letter-spacing: 0.2px;
-  border-radius: 3.7rem;
-  min-height: 4.8rem;
-  padding: 1rem 3.6rem;
-  width: 18.7rem;
-}
-
-.orange-btn {
-  color: #ffffff;
-  background: #ff7b47;
-  flex: 1 1 auto;
-}
-
-.smfb-button-second {
-  color: #0d5c63;
-  border: 0.1rem solid #0d5c63;
-  width: 15.9rem;
-  flex: 1 1 auto;
-}
-
 /************           Services     ***************/
 
-.services-wrapper {
-  display: flex;
-  gap: 3rem;
+.page__section-services{
   position: relative;
   margin-top: -11.1rem;
   z-index: 2;
 }
 
-.service {
-  width: 100%;
+.services__wrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.services__column {
+  flex: 0 1 33.333%;
   padding: 3.5rem 4rem;
   box-shadow: 0 1.3rem 1.9rem rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
 }
 
-.service-icon img,
+/* .service-icon img,
 .abb-icon {
   width: 4.8rem;
   height: 4.8rem;
-}
+} */
 
-.service > *:not(:last-child) {
+.services__item > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.service-title {
+.services__title {
   font-weight: 700;
   font-size: 2.4rem;
-  line-height: 3.2rem;
-  /* or 133% */
-  letter-spacing: 0.1px;
+  line-height: 133%;
+  letter-spacing: 0.1rem;
 }
 
-.service-text {
-  font-weight: 500;
-  font-size: 1.4rem;
-  line-height: 2rem;
-  letter-spacing: 0.2px;
+.services__text {
   color: #737373;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 142%;
+  letter-spacing: 0.2rem;
 }
 
-.green-background {
+.services__column_green {
   background-color: #0d5c63;
   color: #ffffff;
+}
+
+.services__column_green .services__text{
+  color: #ffffff;
+  display: flex;
 }
 
 /************       Achievements     ***************/
