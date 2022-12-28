@@ -137,6 +137,7 @@ li {
 
 .main-block {
   position: relative;
+  /* background:#ededed */
 }
 
 .main-block__body {
@@ -154,7 +155,7 @@ li {
   font-weight: 800;
   font-size: 5.8rem;
   line-height: 138%;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 .main-block__text {
@@ -163,7 +164,7 @@ li {
   height: 6rem;
   font-style: normal;
   line-height: 150%;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 .main-block__buttons {
@@ -178,7 +179,7 @@ li {
   align-items:center;
   border-radius: 3.7rem;
   min-height: 4.8rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
   font-weight: 700;
   text-align: center;
   line-height: 250%;
@@ -205,7 +206,7 @@ li {
 
 /************           Services     ***************/
 
-.page__section-services{
+.page__section-services {
   position: relative;
   margin-top: -11.1rem;
   z-index: 2;
@@ -223,12 +224,6 @@ li {
   background-color: #ffffff;
 }
 
-/* .service-icon img,
-.abb-icon {
-  width: 4.8rem;
-  height: 4.8rem;
-} */
-
 .services__item > *:not(:last-child) {
   margin-bottom: 1rem;
 }
@@ -237,7 +232,7 @@ li {
   font-weight: 700;
   font-size: 2.4rem;
   line-height: 133%;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.01rem;
 }
 
 .services__text {
@@ -245,7 +240,7 @@ li {
   font-weight: 500;
   font-size: 1.7rem;
   line-height: 142%;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.02rem;
 }
 
 .services__column_green {
@@ -260,7 +255,7 @@ li {
 
 /************       Achievements     ***************/
 
-.achievements-container {
+.achievements {
   padding: 8rem 0;
 }
 
@@ -268,58 +263,114 @@ li {
   text-align: center;
 }
 
-.header-block:not(:last-child) {
-  margin-bottom: 5rem;
-}
-
-.atb-title {
+.header-block__title {
   font-weight: 700;
   font-size: 4rem;
-  line-height: 5.7rem;
-  letter-spacing: 0.2px;
+  line-height: 142%;
+  letter-spacing: 0.02rem;
 }
 
-.atb-title:not(:last-child) {
-  margin-bottom: 1rem;
-}
-
-.atb-text {
-  font-size: 1.4rem;
-  line-height: 2rem;
-  text-align: center;
-  letter-spacing: 0.2px;
+.header-block__text {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.01rem;
   color: #737373;
 }
 
-.achievements-bottom-box {
+.achievements__header:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.header-block__title:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.achievements__body {
   display: flex;
   gap: 3rem;
 }
 
-.abb-item > *:not(:last-child) {
+.achievements__column {
+  padding: 0 .5rem;
+  flex: 0 1 25%;
+}
+
+.achievements__item > *:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.abb-item {
-  padding: 3rem 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.achievements__item {
+  padding: 3rem 3rem;
   font-weight: 700;
   background-color: #ffffff;
-  width: 25%;
+  text-align: center;
 }
 
-.abb-number {
+.achievements__value {
   font-size: 4rem;
-  line-height: 5.7rem;
-  letter-spacing: 0.2px;
+  line-height: 142%;
+  letter-spacing: 0.02rem;
 }
 
-.abb-text {
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-  letter-spacing: 0.1px;
-  color: #737373;
+/************       Advice    ***************/
+
+.advice {
+  padding: 12.5rem 0 8rem 0;
 }
+
+.advice__header:not(:last-child) {
+  margin-bottom: 5rem;
+}
+
+.advice__body {
+  display: flex;
+  gap: 3rem;
+}
+
+.advice__column {
+  padding: 0 -1.5rem;
+  flex: 0 1 25%;
+}
+
+.item-advice {
+  background:#ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.item-advice__content {
+  padding: 3rem;
+  flex: 1 1 auto;
+}
+
+.item-advice__link {
+  color:inherit;
+  display: inline-block;
+}
+
+.item-advice__link:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.item-advice__link:hover {
+  text-decoration: underline;
+}
+
+.item-advice__title {
+  font-weight: 700;
+  letter-spacing: .01rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.item-advice__text {
+  color: #737373;
+  line-height: 142%;
+}
+
+.item-advice__img {
+  display: block;
+  padding: 0  0 60% 0;
+}
+
