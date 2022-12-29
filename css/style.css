@@ -374,3 +374,55 @@ li {
   padding: 0  0 60% 0;
 }
 
+/*                      Who             */
+
+.who {
+  background: #fff;
+  padding: 10rem 0;
+}
+
+.who__header {
+  margin-bottom: 10rem;
+}
+
+.who__body {
+  display: flex;
+  gap: 12rem;
+}
+
+.who__video {
+  position: relative;
+  flex: 0 0 57%;
+  padding: 0 0 42.25% 0;
+}
+
+.who__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.who__content {
+  flex: 1 1 auto;
+}
+
+.who__title 
+
+.who__text 
+
+.who__items 
+
+.who__item 
+
+.item-who 
+
+.item-who__icon 
+
+.item-who__body 
+
+.item-who__title 
+
+.item-who__text 
