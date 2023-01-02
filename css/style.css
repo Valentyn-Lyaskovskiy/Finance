@@ -387,7 +387,8 @@ li {
 
 .who__body {
   display: flex;
-  gap: 12rem;
+  gap: 11rem;
+  align-items:flex-start
 }
 
 .who__video {
@@ -407,22 +408,183 @@ li {
 
 .who__content {
   flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.who__title 
+.who__wrapper {
+  padding: 2rem 0;
+}
 
-.who__text 
+.who__title {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 142%;
+  letter-spacing: 0.2px;
+}
 
-.who__items 
+.who__title:not(:last-child) {
+  margin-bottom: 1rem;
+}
 
-.who__item 
+.who__text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
 
-.item-who 
+.item-who {
+  display: flex;
+  gap: 2rem;
+}
 
-.item-who__icon 
+.item-who__title {
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+  font-weight: 700;
+}
 
-.item-who__body 
+.item-who__text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171% ;
+  letter-spacing: 0.2px;
+  color: #737373;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 25rem;
+}
 
-.item-who__title 
+/*      Company    */
 
-.item-who__text 
+.company__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 17.5rem;
+}
+
+/*      Subscribe    */
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe::before {
+  position: absolute;
+  background: #252B42;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7.7rem;
+}
+
+.subscribe__container {
+  padding:  2rem 3.2rem;
+}
+
+.subscribe__body {
+  position: relative;
+  z-index: 2;
+  padding: 3rem 5rem;
+  align-items:center;
+  gap: 18rem;
+  background: #17213C;
+  border-radius: .2rem;
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+  flex: 0 1 50%;
+}
+
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  align-items:center;
+}
+
+.subscribe__input {
+  flex: 1 1 auto;
+  min-height: 5.8rem;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+  color: #737373;
+  background: #F9F9F9;
+  border: .1rem solid #E6E6E6;
+  border-radius: .5rem 0 0 .5rem;;
+  padding: 0 2rem;
+}
+
+.subscribe__input:hover {
+  color:#000;
+}
+
+.subscribe__btn {
+  background: #FF7B47;
+  border: .1rem solid #E6E6E6;
+  border-radius: 0 .5rem .5rem 0;
+  min-height: 5.8rem;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  padding: 0 2.25rem;
+  cursor: pointer;
+  }
+
+/*      Touch    */
+
+.touch {
+  background: #F3F3F3;
+  padding: 8rem 0 14.8rem 0;
+}
+
+.touch__header {
+  margin-bottom: 8rem;
+}
+
+.touch__items {
+  display: flex;
+  align-items:center;
+}
+
+.item-touch {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  flex: 0 1 33.333%;
+  background:#fff;
+  padding: 5rem 4rem;
+}
+
+.item-touch__email {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  color:inherit;
+}
+
+.item-touch__email:hover {
+  text-decoration: underline;
+}

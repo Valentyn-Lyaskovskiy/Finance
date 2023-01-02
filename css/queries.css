@@ -29,7 +29,14 @@
   .advice {
     padding: 8rem 0 8rem 0;
   }
+
 }
+
+/* @media (min-width: 63.75em) {
+  .subscribe__body {
+    margin: 0 3rem;
+  }
+} */
 
 /*                         992px          */
 
@@ -71,6 +78,23 @@
     flex: 1 0 50%;
   }
 
+  .who__body {
+    flex-direction: column-reverse;
+    align-items:stretch;
+    gap: 5rem;
+  }
+
+  .who {
+  padding: 5rem 0;
+  }
+
+  .header-block {
+    margin-bottom: 5rem;
+  }
+
+  .who__video {
+    padding: 0 0 56.25% 0;
+  }
 }
 
 /*                         767px          */
@@ -89,7 +113,28 @@
     padding: 4rem 0 4rem 0;
   }
 
+  .company__body {
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .subscribe__body {
+    padding: 2rem 3.2rem;
+    margin:  2rem -3.2rem;
+  }
+
+  .subscribe__title {
+    margin-bottom: 2rem;
+  }
 }
+
+@media (min-width: 47.9375em) {
+    .subscribe__body {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 
 /*                         479px          */
 
