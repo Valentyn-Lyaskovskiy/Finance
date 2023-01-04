@@ -41,7 +41,7 @@ body {
   font-size: 1.6rem;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -49,7 +49,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
+} */
 
 .wrapper {
   min-height: 100%;
@@ -562,10 +562,10 @@ li {
   margin-bottom: 8rem;
 }
 
-.touch__items {
+/* .touch__items {     //min-width, that is why commented
   display: flex;
   align-items:center;
-}
+} */
 
 .item-touch {
   display: flex;
@@ -625,9 +625,59 @@ li {
 .item-touch_active {
   color: #fff;
   background-color:#252b42;
+  padding: 8rem 4rem;
+
 }
 
 .item-touch_active .item-touch__btn {
   color: #fff;
   border: 1px solid #FFFFFF;
+}
+
+/*      Consult    */
+
+.page__consult {
+  background: #FAFAFA;
+}
+
+.consult__box {
+  display: flex;
+  justify-content: space-between;
+} 
+
+.consult__container{
+  padding: 4rem 1rem;
+}
+
+.consult__title:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.consult__title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+}
+
+.consult_text {
+  font-size: 1.4rem;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.consult__btn {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 200%;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  background: #FF7B47;
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 4rem;
+  align-items: center;
 }

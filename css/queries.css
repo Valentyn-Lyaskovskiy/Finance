@@ -95,6 +95,24 @@
   .who__video {
     padding: 0 0 56.25% 0;
   }
+
+  .touch__container {
+    padding: 0;
+  }
+
+  .touch__header {
+    padding: 0 .5rem;
+  }
+
+}
+
+/*                   Min-width      992px          */
+
+@media (min-width: 62em) {
+  .touch__items {
+   display: flex;
+   align-items:center;
+  }
 }
 
 /*                         767px          */
@@ -125,6 +143,28 @@
 
   .subscribe__title {
     margin-bottom: 2rem;
+  }
+
+  .consult__box {
+    flex-direction: column;
+    /* margin: 0 auto; */
+    align-items:center;
+  }
+
+  .consult__content {
+    margin-bottom: 3rem;
+  }
+
+  .consult__btn {
+    width: 75%;
+  }
+
+  .page__touch {
+    padding: 10rem 0;
+  }
+
+  .touch__item {
+    padding: 5rem 0;
   }
 }
 
@@ -185,6 +225,10 @@
 
   .main-block__buttonі {
     margin-top: 4rem;
+  }
+
+  .main-block__img img {
+    width: 292%;
   }
 
 }
