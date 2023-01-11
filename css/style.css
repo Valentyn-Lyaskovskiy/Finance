@@ -173,6 +173,17 @@ li {
   flex-wrap: wrap;
 }
 
+.main-block__button_orange:hover {
+  color: #0d5c63;
+  background-color: #fff;
+  text-decoration: underline;
+}
+
+.main-block__button_border:hover {
+  background-color:#ffffff;
+  text-decoration: underline;
+}
+
 .main-block__button {
   display: flex;
   justify-content: center;
@@ -680,4 +691,105 @@ li {
   flex-direction: column;
   padding: 1.5rem 4rem;
   align-items: center;
+}
+
+/*      Footer    */
+
+.footer__top {
+  background: #17213C;
+  padding: 5rem 0;
+}
+
+.footer__column, .footer__link, .contacts-footer__link {
+  color:#fff;
+}
+
+.footer__main {
+  display: flex;
+}
+
+.footer__column {
+  /* flex: 0 1 20%; */
+  padding: 0 1.5rem;
+}
+
+.footer__bottom {
+  padding: 2.5rem 0;
+  background:#fafafa;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.social__items:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.footer__copy {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.footer__label:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.footer__label {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.contacts-footer__link:not(:last-child) {
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.footer__row {
+  display: flex;
+  margin: 0 -1.5rem;
+}
+
+.contacts-footer__link_phone {
+  background: url('/img/consult-01.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__link_map {
+  background: url('/img/consult-02.svg') 0 0 no-repeat;
+}
+.contacts-footer__link_email {
+  background: url('/img/consult-03.svg') 0 0 no-repeat;
+}
+
+.contacts-footer__link:hover {
+  text-decoration: underline;
+}
+
+.contacts-footer__link {
+  padding: 0 0 0 3.4rem;
+  display: flex;
+  min-height: 3rem;
+  line-height: 151%;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__link {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 171%;
+  letter-spacing: 0.2px;
 }
